@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Steadfast Academic and Admission Care</title>
+
+<meta name="description"
+content="Steadfast Academic and Admission Care - Academic Coaching, University Admission and Nursing Admission Preparation">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Noto Sans Bengali","SolaimanLipi","Arial",sans-serif;
+    background:#f5f7fb;
+    color:#172033;
+    line-height:1.7;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* TOP BAR */
+.topbar{
+    background:#071b35;
+    color:white;
+    padding:8px 0;
+    font-size:14px;
+}
+
+.topbar .container{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+/* HEADER */
+header{
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.nav{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-icon{
+    width:55px;
+    height:55px;
+    border-radius:15px;
+    background:linear-gradient(135deg,#0757d9,#12a8ff);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+    font-weight:bold;
+    box-shadow:0 6px 15px rgba(0,87,200,.25);
+}
+
+.logo-text h2{
+    font-size:18px;
+    color:#063b82;
+    line-height:1.2;
+}
+
+.logo-text span{
+    font-size:12px;
+    color:#777;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+nav a{
+    font-weight:600;
+    font-size:14px;
+    color:#26354d;
+}
+
+nav a:hover{
+    color:#0763dc;
+}
+
+.menu-btn{
+    display:none;
+    border:0;
+    background:#0763dc;
+    color:white;
+    padding:8px 12px;
+    border-radius:8px;
+    font-size:20px;
+}
+
+/* HERO */
+.hero{
+    background:
+    linear-gradient(120deg,rgba(4,35,82,.96),rgba(0,110,190,.88)),
+    radial-gradient(circle at top right,#21b8ff,transparent 40%);
+    color:white;
+    padding:85px 0;
+}
+
+.hero-content{
+    display:grid;
+    grid-template-columns:1.4fr .8fr;
+    gap:45px;
+    align-items:center;
+}
+
+.badge{
+    display:inline-block;
+    background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.3);
+    padding:7px 16px;
+    border-radius:30px;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:48px;
+    line-height:1.2;
+    margin-bottom:18px;
+}
+
+.hero h1 span{
+    color:#7ee7ff;
+}
+
+.hero p{
+    font-size:18px;
+    opacity:.92;
+    max-width:700px;
+}
+
+.hero-buttons{
+    margin-top:28px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:bold;
+    border:0;
+    cursor:pointer;
+}
+
+.btn-primary{
+    background:white;
+    color:#0757b8;
+}
+
+.btn-outline{
+    border:1px solid white;
+    color:white;
+}
+
+.hero-card{
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.2);
+    backdrop-filter:blur(10px);
+    padding:30px;
+    border-radius:22px;
+}
+
+.hero-card h3{
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+.hero-card div{
+    padding:8px 0;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+/* SECTIONS */
+section{
+    padding:70px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:34px;
+    color:#082c59;
+}
+
+.section-title p{
+    color:#6d7785;
+    margin-top:7px;
+}
+
+/* STATS */
+.stats{
+    margin-top:-35px;
+    position:relative;
+}
+
+.stats-grid{
+    background:white;
+    box-shadow:0 12px 35px rgba(0,0,0,.1);
+    border-radius:18px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    overflow:hidden;
+}
+
+.stat{
+    text-align:center;
+    padding:28px 15px;
+    border-right:1px solid #eee;
+}
+
+.stat:last-child{
+    border-right:0;
+}
+
+.stat h3{
+    font-size:30px;
+    color:#0866d5;
+}
+
+/* PROGRAMS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.card{
+    background:white;
+    padding:27px;
+    border-radius:18px;
+    box-shadow:0 7px 25px rgba(20,40,80,.08);
+    border:1px solid #edf0f5;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(20,40,80,.13);
+}
+
+.card-icon{
+    width:52px;
+    height:52px;
+    border-radius:14px;
+    background:#e8f3ff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#092f60;
+    margin-bottom:8px;
+}
+
+/* FEATURES */
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.feature{
+    background:white;
+    padding:22px;
+    border-radius:15px;
+    border-left:5px solid #0874df;
+}
+
+.feature strong{
+    display:block;
+    font-size:18px;
+    margin-bottom:4px;
+}
+
+/* STUDENT / TEACHER */
+.portal{
+    background:#eef6ff;
+}
+
+.portal-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.portal-box{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.portal-box h3{
+    font-size:25px;
+    color:#073d7b;
+    margin-bottom:10px;
+}
+
+.portal-box ul{
+    padding-left:20px;
+    margin:15px 0;
+}
+
+.portal-box li{
+    margin:5px 0;
+}
+
+/* PAYMENT */
+.payment{
+    background:#071b35;
+    color:white;
+}
+
+.payment .section-title h2{
+    color:white;
+}
+
+.payment-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.payment-box{
+    background:white;
+    color:#182033;
+    border-radius:18px;
+    padding:30px;
+}
+
+.payment-number{
+    font-size:24px;
+    font-weight:bold;
+    color:#d61d47;
+    margin:10px 0;
+}
+
+/* FORMS */
+.form-box{
+    max-width:750px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 8px 30px rgba(0,0,0,.07);
+}
+
+.form-group{
+    margin-bottom:16px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:12px 14px;
+    border:1px solid #dce2eb;
+    border-radius:9px;
+    outline:none;
+    font-family:inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#0874df;
+}
+
+.submit{
+    background:#0766d6;
+    color:white;
+    width:100%;
+    font-size:16px;
+}
+
+/* NOTICE */
+.notice{
+    background:#fff;
+}
+
+.notice-list{
+    max-width:850px;
+    margin:auto;
+}
+
+.notice-item{
+    background:#f5f8fc;
+    padding:16px 20px;
+    margin-bottom:10px;
+    border-radius:10px;
+    border-left:4px solid #0874df;
+}
+
+/* CONTACT */
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.contact-box{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 7px 25px rgba(0,0,0,.06);
+}
+
+.contact-item{
+    padding:13px 0;
+    border-bottom:1px solid #eee;
+}
+
+/* FOOTER */
+footer{
+    background:#041326;
+    color:#dce6f3;
+    padding:45px 0 20px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:30px;
+}
+
+footer h3{
+    color:white;
+    margin-bottom:12px;
+}
+
+footer a{
+    display:block;
+    margin:6px 0;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.1);
+    margin-top:30px;
+    padding-top:18px;
+    text-align:center;
+    font-size:13px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    .hero-content,
+    .payment-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cards{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+}
+
+@media(max-width:600px){
+
+    .topbar .container{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .nav{
+        min-height:68px;
+    }
+
+    .logo-icon{
+        width:45px;
+        height:45px;
+        font-size:20px;
+    }
+
+    .logo-text h2{
+        font-size:14px;
+    }
+
+    .hero{
+        padding:60px 0;
+    }
+
+    .hero h1{
+        font-size:31px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .stat{
+        border-bottom:1px solid #eee;
+    }
+
+    .cards,
+    .feature-grid,
+    .portal-grid{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:55px 0;
+    }
+
+    .section-title h2{
+        font-size:28px;
+    }
+
+    .form-box{
+        padding:22px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+<div class="container">
+    <div>📍 বকশীগঞ্জ, জামালপুর</div>
+    <div>📞 ০১৯৪০-৬৮৫৮৮০ &nbsp; | &nbsp; ০১৯০২-৬৫০৯৯১</div>
+</div>
+</div>
+
+<!-- HEADER -->
+<header>
+<div class="container nav">
+
+    <a href="#" class="logo">
+        <div class="logo-icon">SA</div>
+        <div class="logo-text">
+            <h2>Steadfast Academic</h2>
+            <span>Academic & Admission Care</span>
+        </div>
+    </a>
+
+    <nav>
+        <a href="#home">হোম</a>
+        <a href="#programs">কোর্স</a>
+        <a href="#students">শিক্ষার্থী</a>
+        <a href="#teachers">শিক্ষক</a>
+        <a href="#admission">ভর্তি</a>
+        <a href="#payment">পেমেন্ট</a>
+        <a href="#contact">যোগাযোগ</a>
+    </nav>
+
+    <button class="menu-btn">☰</button>
+
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="container hero-content">
+
+    <div>
+        <div class="badge">সাফল্যের ধারাবাহিকতায়</div>
+
+        <h1>
+            Steadfast Academic
+            <span>& Admission Care</span>
+        </h1>
+
+        <p>
+            সৃজনশীলতাই মেধা বিকাশের মূলমন্ত্র।
+            একাডেমিক প্রস্তুতি থেকে বিশ্ববিদ্যালয় ও নার্সিং ভর্তি—
+            শিক্ষার্থীর সাফল্যের জন্য পরিকল্পিত শিক্ষা ব্যবস্থা।
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#admission" class="btn btn-primary">
+                📝 অনলাইনে ভর্তি
+            </a>
+
+            <a href="tel:01940685880" class="btn btn-outline">
+                📞 যোগাযোগ করুন
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-card">
+        <h3>আমাদের ঠিকানা</h3>
+
+        <div>📍 পাটহাটী মোড়</div>
+        <div>🏢 ডাচ বাংলা বুথের ২য় তলা</div>
+        <div>📌 বকশীগঞ্জ, জামালপুর</div>
+        <div>📞 ০১৯৪০-৬৮৫৮৮০</div>
+        <div>📞 ০১৯০২-৬৫০৯৯১</div>
+    </div>
+
+</div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+<div class="container">
+
+<div class="stats-grid">
+
+    <div class="stat">
+        <h3>৪+</h3>
+        <p>সাফল্যের বছর</p>
+    </div>
+
+    <div class="stat">
+        <h3>SSC</h3>
+        <p>একাডেমিক কোচিং</p>
+    </div>
+
+    <div class="stat">
+        <h3>HSC</h3>
+        <p>একাডেমিক কোচিং</p>
+    </div>
+
+    <div class="stat">
+        <h3>Admission</h3>
+        <p>ভর্তি প্রস্তুতি</p>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section>
+<div class="container">
+
+<div class="section-title">
+    <h2>আমাদের সম্পর্কে</h2>
+    <p>শিক্ষার্থীর মেধা ও ভবিষ্যৎ গঠনে আমাদের অঙ্গীকার</p>
+</div>
+
+<div class="feature-grid">
+
+    <div class="feature">
+        <strong>🎯 লক্ষ্যভিত্তিক শিক্ষা</strong>
+        প্রতিটি শিক্ষার্থীর প্রয়োজন অনুযায়ী পরিকল্পিত একাডেমিক প্রস্তুতি।
+    </div>
+
+    <div class="feature">
+        <strong>📚 নিয়মিত ক্লাস ও পরীক্ষা</strong>
+        ক্লাসের পাশাপাশি নিয়মিত পরীক্ষা ও মূল্যায়নের মাধ্যমে প্রস্তুতি যাচাই।
+    </div>
+
+    <div class="feature">
+        <strong>👨‍🏫 অভিজ্ঞ শিক্ষক</strong>
+        বিষয়ভিত্তিক দক্ষ ও দায়িত্বশীল শিক্ষকদের মাধ্যমে পাঠদান।
+    </div>
+
+    <div class="feature">
+        <strong>🏆 ভর্তি পরীক্ষার প্রস্তুতি</strong>
+        বিশ্ববিদ্যালয় ও নার্সিংসহ বিভিন্ন ভর্তি পরীক্ষার জন্য বিশেষ প্রস্তুতি।
+    </div>
+
+</div>
+
+</div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs">
+<div class="container">
+
+<div class="section-title">
+    <h2>আমাদের কোর্সসমূহ</h2>
+    <p>আপনার প্রয়োজন অনুযায়ী সঠিক প্রস্তুতি বেছে নিন</p>
+</div>
+
+<div class="cards">
+
+    <div class="card">
+        <div class="card-icon">📘</div>
+        <h3>একাদশ–দ্বাদশ নিয়মিত কোচিং</h3>
+        <p>HSC শিক্ষার্থীদের জন্য নিয়মিত একাডেমিক ক্লাস, পরীক্ষা ও প্রস্তুতি।</p>
+    </div>
+
+    <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3>Basic to Advanced</h3>
+        <p>বেসিক থেকে ধাপে ধাপে উন্নত পর্যায়ের প্রস্তুতির বিশেষ ব্যাচ।</p>
+    </div>
+
+    <div class="card">
+        <div class="card-icon">🎓</div>
+        <h3>বিশ্ববিদ্যালয় ভর্তি</h3>
+        <p>বিশ্ববিদ্যালয় ভর্তি পরীক্ষার জন্য পরিকল্পিত ও প্রতিযোগিতামূলক প্রস্তুতি।</p>
+    </div>
+
+    <div class="card">
+        <div class="card-icon">👩‍⚕️</div>
+        <h3>নার্সিং ভর্তি প্রস্তুতি</h3>
+        <p>নার্সিং ভর্তি পরীক্ষার জন্য বিষয়ভিত্তিক প্রস্তুতি ও পরীক্ষা।</p>
+    </div>
+
+    <div class="card">
+        <div class="card-icon">📝</div>
+        <h3>একাডেমিক প্রস্তুতি</h3>
+        <p>SSC ও HSC পরীক্ষার্থীদের জন্য নিয়মিত একাডেমিক প্রস্তুতি।</p>
+    </div>
+
+    <div class="card">
+        <div class="card-icon">🏅</div>
+        <h3>বিশেষ ব্যাচ</h3>
+        <p>Pre-Test, Test এবং গুরুত্বপূর্ণ পরীক্ষার জন্য বিশেষ প্রস্তুতি ব্যাচ।</p>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+<!-- STUDENT PORTAL -->
+<section class="portal" id="students">
+<div class="container">
+
+<div class="section-title">
+    <h2>Student Portal</h2>
+    <p>শিক্ষার্থীদের জন্য ডিজিটাল সুবিধা</p>
+</div>
+
+<div class="portal-grid">
+
+<div class="portal-box">
+    <h3>👨‍🎓 শিক্ষার্থী সুবিধা</h3>
+
+    <ul>
+        <li>ব্যক্তিগত Student ID</li>
+        <li>ক্লাস রুটিন</li>
+        <li>পরীক্ষার ফলাফল</li>
+        <li>উপস্থিতির তথ্য</li>
+        <li>বকেয়া/ফি তথ্য</li>
+        <li>নোটিশ</li>
+        <li>ডিজিটাল রেজাল্ট</li>
+    </ul>
+
+    <button class="btn btn-primary"
+    onclick="alert('Student Login সিস্টেম পরবর্তী ধাপে যুক্ত করা হবে।')">
+    Student Login
+    </button>
+</div>
+
+<div class="portal-box" id="teachers">
+    <h3>👨‍🏫 Teacher Portal</h3>
+
+    <ul>
+        <li>Teacher Profile</li>
+        <li>নিজস্ব ক্লাস রুটিন</li>
+        <li>Attendance Management</li>
+        <li>Exam & Result Entry</li>
+        <li>Student Performance</li>
+        <li>Notice Management</li>
+    </ul>
+
+    <button class="btn btn-primary"
+    onclick="alert('Teacher Login সিস্টেম পরবর্তী ধাপে যুক্ত করা হবে।')">
+    Teacher Login
+    </button>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- ADMISSION -->
+<section id="admission">
+<div class="container">
+
+<div class="section-title">
+    <h2>অনলাইন ভর্তি আবেদন</h2>
+    <p>নিচের ফর্ম পূরণ করে ভর্তির জন্য আবেদন করুন</p>
+</div>
+
+<div class="form-box">
+
+<form onsubmit="submitAdmission(event)">
+
+<div class="form-group">
+<label>শিক্ষার্থীর নাম *</label>
+<input type="text" required placeholder="পূর্ণ নাম">
+</div>
+
+<div class="form-group">
+<label>মোবাইল নম্বর *</label>
+<input type="tel" required placeholder="01XXXXXXXXX">
+</div>
+
+<div class="form-group">
+<label>শ্রেণি *</label>
+
+<select required>
+<option value="">নির্বাচন করুন</option>
+<option>SSC</option>
+<option>একাদশ</option>
+<option>দ্বাদশ</option>
+<option>বিশ্ববিদ্যালয় ভর্তি</option>
+<option>নার্সিং ভর্তি</option>
+</select>
+
+</div>
+
+<div class="form-group">
+<label>বিভাগ</label>
+
+<select>
+<option>প্রযোজ্য নয়</option>
+<option>বিজ্ঞান</option>
+<option>মানবিক</option>
+<option>ব্যবসায় শিক্ষা</option>
+</select>
+
+</div>
+
+<div class="form-group">
+<label>ঠিকানা</label>
+<textarea rows="3" placeholder="বর্তমান ঠিকানা"></textarea>
+</div>
+
+<button class="btn submit" type="submit">
+আবেদন জমা দিন
+</button>
+
+</form>
+
+</div>
+
+</div>
+</section>
+
+<!-- PAYMENT -->
+<section class="payment" id="payment">
+<div class="container">
+
+<div class="section-title">
+    <h2>অনলাইন পেমেন্ট</h2>
+    <p>কোর্স ফি পরিশোধের সুবিধা</p>
+</div>
+
+<div class="payment-grid">
+
+<div class="payment-box">
+    <h3>📱 bKash</h3>
+    <p>বিকাশের মাধ্যমে ফি পরিশোধ করতে পারবেন।</p>
+
+    <div class="payment-number">
+        ০১৯৪০-৬৮৫৮৮০
+    </div>
+
+    <p>
+        ⚠️ প্রকৃত Payment Verification ব্যবস্থা
+        পরবর্তী ধাপে নিরাপদ Backend-এর মাধ্যমে যুক্ত করা হবে।
+    </p>
+</div>
+
+<div class="payment-box">
+    <h3>💳 Payment Information</h3>
+
+    <div class="form-group">
+        <label>Student ID</label>
+        <input id="studentId" placeholder="Student ID">
+    </div>
+
+    <div class="form-group">
+        <label>Transaction ID</label>
+        <input id="transactionId" placeholder="bKash Transaction ID">
+    </div>
+
+    <button class="btn submit"
+    onclick="verifyPayment()">
+        Payment Submit
+    </button>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- NOTICE -->
+<section class="notice">
+<div class="container">
+
+<div class="section-title">
+    <h2>নোটিশ</h2>
+    <p>গুরুত্বপূর্ণ ঘোষণা</p>
+</div>
+
+<div class="notice-list">
+
+<div class="notice-item">
+📢 নতুন ব্যাচের ভর্তি কার্যক্রম চলমান।
+</div>
+
+<div class="notice-item">
+📚 নিয়মিত ক্লাস ও পরীক্ষার সময়সূচি Student Portal-এ প্রকাশ করা হবে।
+</div>
+
+<div class="notice-item">
+🏆 বিশেষ প্রস্তুতি ব্যাচের তথ্য শীঘ্রই প্রকাশ করা হবে।
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="container">
+
+<div class="section-title">
+    <h2>যোগাযোগ</h2>
+    <p>আমাদের সাথে যোগাযোগ করুন</p>
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-box">
+
+<h3>📍 ঠিকানা</h3>
+
+<div class="contact-item">
+<strong>Steadfast Academic and Admission Care</strong>
+</div>
+
+<div class="contact-item">
+পাটহাটী মোড়,<br>
+ডাচ বাংলা বুথের ২য় তলা,<br>
+বকশীগঞ্জ, জামালপুর।
+</div>
+
+<div class="contact-item">
+📞 ০১৯৪০-৬৮৫৮৮০
+</div>
+
+<div class="contact-item">
+📞 ০১৯০২-৬৫০৯৯১
+</div>
+
+</div>
+
+<div class="contact-box">
+
+<h3>🌐 দ্রুত যোগাযোগ</h3>
+
+<p style="margin:15px 0;">
+যেকোনো ভর্তি বা কোর্স সংক্রান্ত তথ্যের জন্য আমাদের সাথে যোগাযোগ করুন।
+</p>
+
+<a class="btn btn-primary"
+href="tel:01940685880">
+📞 কল করুন
+</a>
+
+<br><br>
+
+<a class="btn btn-primary"
+href="https://maps.app.goo.gl/PN9oZTZmLxVCSjtZ9"
+target="_blank">
+📍 Google Maps
+</a>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+<h3>Steadfast Academic and Admission Care</h3>
+
+<p>
+সৃজনশীলতাই মেধা বিকাশের মূলমন্ত্র।
+শিক্ষার্থীর সাফল্যের জন্য আধুনিক ও পরিকল্পিত শিক্ষা ব্যবস্থা।
+</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<a href="#home">হোম</a>
+<a href="#programs">কোর্স</a>
+<a href="#admission">অনলাইন ভর্তি</a>
+<a href="#payment">পেমেন্ট</a>
+</div>
+
+<div>
+<h3>যোগাযোগ</h3>
+<p>📞 ০১৯৪০-৬৮৫৮৮০</p>
+<p>📞 ০১৯০২-৬৫০৯৯১</p>
+<p>📍 বকশীগঞ্জ, জামালপুর</p>
+</div>
+
+</div>
+
+<div class="container copyright">
+© 2026 Steadfast Academic and Admission Care — All Rights Reserved.
+</div>
+
+</footer>
+
+<script>
+
+function submitAdmission(event){
+
+    event.preventDefault();
+
+    alert(
+        "আপনার আবেদন ফর্ম প্রস্তুত হয়েছে।\n\n" +
+        "বাস্তবে তথ্য সংরক্ষণের জন্য Database সংযোগ পরবর্তী ধাপে করা হবে।"
+    );
+
+}
+
+function verifyPayment(){
+
+    let student =
+    document.getElementById("studentId").value;
+
+    let transaction =
+    document.getElementById("transactionId").value;
+
+    if(student === "" || transaction === ""){
+
+        alert("Student ID এবং Transaction ID লিখুন।");
+        return;
+
+    }
+
+    alert(
+        "Payment তথ্য গ্রহণের interface প্রস্তুত হয়েছে।\n\n" +
+        "Payment verification system পরবর্তী ধাপে secure server-এর সাথে যুক্ত করা হবে।"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
